@@ -1,0 +1,674 @@
+fileFormatVersion: 2
+guid: 6d728cdbb81b4c641ab766f92e477ed6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4189353577452319699
+    second: troll_0
+  - first:
+      213: 8812212675125320136
+    second: troll_1
+  - first:
+      213: -4728298183976067129
+    second: troll_2
+  - first:
+      213: 5026614338272840031
+    second: troll_3
+  - first:
+      213: -4810810095545614232
+    second: troll_4
+  - first:
+      213: -7633419460903790858
+    second: troll_5
+  - first:
+      213: 495126975529019136
+    second: troll_6
+  - first:
+      213: 9158376199868651643
+    second: troll_7
+  - first:
+      213: -5624848419379542704
+    second: troll_8
+  - first:
+      213: 7793017743512788951
+    second: troll_9
+  - first:
+      213: -2458143726803550266
+    second: troll_10
+  - first:
+      213: -2601486927475668550
+    second: troll_11
+  - first:
+      213: 3083128526644447620
+    second: troll_12
+  - first:
+      213: 3493386712918283742
+    second: troll_13
+  - first:
+      213: 7092602050113557591
+    second: troll_14
+  - first:
+      213: -8057667846526183815
+    second: troll_15
+  - first:
+      213: 8500636020596018746
+    second: troll_16
+  - first:
+      213: -7204009753470913845
+    second: troll_17
+  - first:
+      213: 2327268919451107844
+    second: troll_18
+  - first:
+      213: -1350153102320810904
+    second: troll_19
+  - first:
+      213: 1411676749509554338
+    second: troll_20
+  - first:
+      213: -4317833001796843679
+    second: troll_21
+  - first:
+      213: 4766368345343136999
+    second: troll_22
+  - first:
+      213: -1975767895061203330
+    second: troll_23
+  - first:
+      213: -7627764670097190948
+    second: troll_24
+  - first:
+      213: 3782718722082347714
+    second: troll_25
+  - first:
+      213: 5864893779493391416
+    second: troll_26
+  - first:
+      213: 7303925229073263975
+    second: troll_27
+  - first:
+      213: 5684345882691423036
+    second: troll_28
+  - first:
+      213: -654451945277983434
+    second: troll_29
+  - first:
+      213: -4582297454116423718
+    second: troll_30
+  - first:
+      213: 5050815981296233334
+    second: troll_31
+  - first:
+      213: -8055567306599144478
+    second: troll_32
+  - first:
+      213: 7306772999170100964
+    second: troll_33
+  - first:
+      213: -5580626146165946725
+    second: troll_34
+  - first:
+      213: 3251309603171718059
+    second: troll_35
+  - first:
+      213: 7660056801165857155
+    second: troll_36
+  - first:
+      213: -8566158549605289793
+    second: troll_37
+  - first:
+      213: -30873763974984807
+    second: troll_38
+  - first:
+      213: 868433468745067664
+    second: troll_39
+  - first:
+      213: 7304576791501382683
+    second: troll_40
+  - first:
+      213: 5105607483273050974
+    second: troll_41
+  - first:
+      213: -8937447692272984835
+    second: troll_42
+  - first:
+      213: -3396201623542543401
+    second: troll_43
+  - first:
+      213: -7896680903404570995
+    second: troll_44
+  - first:
+      213: -7278587883134140327
+    second: troll_45
+  - first:
+      213: 457875434216449119
+    second: troll_46
+  - first:
+      213: -4735699540296856834
+    second: troll_47
+  - first:
+      213: 6871057785031774224
+    second: troll_48
+  - first:
+      213: -3353096314058410893
+    second: troll_49
+  - first:
+      213: 8498695468068908389
+    second: troll_50
+  - first:
+      213: -1605017085656211308
+    second: troll_51
+  - first:
+      213: -4656179494000397286
+    second: troll_52
+  - first:
+      213: -6004198169821148497
+    second: troll_53
+  - first:
+      213: 3221527510682700667
+    second: troll_54
+  - first:
+      213: 87699093366049500
+    second: troll_55
+  - first:
+      213: 2642541431196498681
+    second: troll_56
+  - first:
+      213: 7465980941563750707
+    second: troll_57
+  - first:
+      213: -9107729073285520855
+    second: troll_58
+  - first:
+      213: 7771205391340844271
+    second: troll_59
+  - first:
+      213: -8519353510826960588
+    second: troll_60
+  - first:
+      213: -4548461019165931636
+    second: troll_61
+  - first:
+      213: 941640746506484268
+    second: troll_62
+  - first:
+      213: -320985242195558251
+    second: troll_63
+  - first:
+      213: -3306321147821889672
+    second: troll_64
+  - first:
+      213: 1969503819034974154
+    second: troll_65
+  - first:
+      213: -8456776526322560070
+    second: troll_66
+  - first:
+      213: 7457048505338823656
+    second: troll_67
+  - first:
+      213: 6175584731021351759
+    second: troll_68
+  - first:
+      213: -1682939826626073159
+    second: troll_69
+  - first:
+      213: -4770073866286387929
+    second: troll_70
+  - first:
+      213: -5770162383247976751
+    second: troll_71
+  - first:
+      213: 9211137920152810803
+    second: troll_72
+  - first:
+      213: -3830410962123050922
+    second: troll_73
+  - first:
+      213: -4124374249456581753
+    second: troll_74
+  - first:
+      213: -3030099176351281671
+    second: troll_75
+  - first:
+      213: 9117395347991124128
+    second: troll_76
+  - first:
+      213: 7146916533568205621
+    second: troll_77
+  - first:
+      213: -4875948446896276670
+    second: troll_78
+  - first:
+      213: -1159101855481960112
+    second: troll_79
+  - first:
+      213: -8849921878599110616
+    second: troll_80
+  - first:
+      213: 7378516867315450935
+    second: troll_81
+  - first:
+      213: 4836746688757352677
+    second: troll_82
+  - first:
+      213: -6351490282913624856
+    second: troll_83
+  - first:
+      213: 734331370676601589
+    second: troll_84
+  - first:
+      213: -657828478267955887
+    second: troll_85
+  - first:
+      213: -3752568797840638951
+    second: troll_86
+  - first:
+      213: 1010179319306207101
+    second: troll_87
+  - first:
+      213: -1677786855993803483
+    second: troll_88
+  - first:
+      213: -7343320473680313809
+    second: troll_89
+  - first:
+      213: -4550609200373102499
+    second: troll_90
+  - first:
+      213: -4690205445087634250
+    second: troll_91
+  - first:
+      213: 2746219504016708210
+    second: troll_92
+  - first:
+      213: 1162256243939562844
+    second: troll_93
+  - first:
+      213: 6956597443735948168
+    second: troll_94
+  - first:
+      213: -3770790791170348604
+    second: troll_95
+  - first:
+      213: -307995126436199511
+    second: troll_96
+  - first:
+      213: -5543193831929185288
+    second: troll_97
+  - first:
+      213: -3517519436441621465
+    second: troll_98
+  - first:
+      213: -4013112699594391718
+    second: troll_99
+  - first:
+      213: 8489712702087286062
+    second: troll_100
+  - first:
+      213: 2605312897147082830
+    second: troll_101
+  - first:
+      213: 7999565559349281140
+    second: troll_102
+  - first:
+      213: 6170051507170339238
+    second: troll_103
+  - first:
+      213: -4143436484752561852
+    second: troll_104
+  - first:
+      213: -4152879173598025244
+    second: troll_105
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: troll_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3be8ee1e2932a30800000000000000
+      internalID: 4189353577452319699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c91a0a2db44b4a70800000000000000
+      internalID: 8812212675125320136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf5bff6ad5b16eb0800000000000000
+      internalID: -4728298183976067129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5943a7cb1f12c540800000000000000
+      internalID: 5026614338272840031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8600425f4b19c3db0800000000000000
+      internalID: -4810810095545614232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f69643a175a01690800000000000000
+      internalID: -7633419460903790858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007ee176c5b0fd600800000000000000
+      internalID: 495126975529019136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78109071a6191f70800000000000000
+      internalID: 9158376199868651643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055077f0a2680f1b0800000000000000
+      internalID: -5624848419379542704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df556a395c562c60800000000000000
+      internalID: 7793017743512788951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cff405ed4be2edd0800000000000000
+      internalID: -2458143726803550266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: troll_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab98df73c69a5ebd0800000000000000
+      internalID: -2601486927475668550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
