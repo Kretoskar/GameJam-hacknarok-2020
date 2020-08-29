@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Infrastructure.Enemy;
 using UnityEngine;
 
 namespace Infrastructure.Player
@@ -43,8 +44,14 @@ namespace Infrastructure.Player
             List<Collider2D> hitColliders = Physics2D.OverlapCircleAll(
                 (Vector2) transform.position + _playerInput.DirectionFromPlayerToMouse * _attackRange,
                 _circleOverlapRadius, layerMask).ToList();
-            
-            print(hitColliders.Count);
+
+            foreach (var hitCollider in hitColliders)
+            {
+                var hitTaget = hitCollider.GetComponent<Attackable>();
+                
+                if(hitTaget != null)
+                    hitTaget.GotHit();
+            }
         }
 
         private IEnumerator AttackCoroutine()
