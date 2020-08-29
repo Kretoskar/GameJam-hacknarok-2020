@@ -13,14 +13,21 @@ namespace Infrastructure.Player
         private Rigidbody2D _rb;
 
         private Vector2 _moveVector;
+
+        public bool CanMove;
         
         void Awake()
         {
+            CanMove = true;
+            
             _rb = GetComponent<Rigidbody2D>();
         }
 
         public void Move(float horizontal, float vertical)
         {
+            if(!CanMove)
+                return;
+            
             GetMoveVectorFromInput(horizontal, vertical);
             MoveRigidbody();
         }
