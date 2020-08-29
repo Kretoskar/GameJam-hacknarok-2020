@@ -7,7 +7,33 @@ namespace Infrastructure
 {
     public class PlayerInput : MonoBehaviour
     {
-        [SerializeField] private string _interactionKey;
+        #region Singleton
+
+        private static PlayerInput _instance;
+
+        public static PlayerInput Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType<PlayerInput>();
+                    if (_instance == null)
+                    {
+                        GameObject container = new GameObject("PlayerInput");
+                        _instance = container.AddComponent<PlayerInput>();
+                    }
+                }
+
+                return _instance;
+            }
+        }
+        
+
+        #endregion
+        
+        [SerializeField]
+        private string _interactionKey;
         
         private const string HORIZONTAL_AXIS_KEY = "Horizontal";
         private const string VARTICAL_AXIS_KEY = "Vertical";
@@ -26,7 +52,7 @@ namespace Infrastructure
 
             if (Input.GetButtonDown(_interactionKey))
             {
-                print("chuj");
+                InteractionKeyPressed?.Invoke();
             }
         }
     }
