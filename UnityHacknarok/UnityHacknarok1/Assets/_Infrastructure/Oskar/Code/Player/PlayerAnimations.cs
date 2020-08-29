@@ -24,7 +24,8 @@ public class PlayerAnimations : MonoBehaviour
 
     void Update()
     {
-        if (Mathf.Abs(_playerInput.HorizontalAxis) < _idleAnimTransitionHardness)
+        if (Mathf.Abs(_playerInput.HorizontalAxis) < _idleAnimTransitionHardness
+            && Mathf.Abs(_playerInput.VerticalAxis) < _idleAnimTransitionHardness)
         {
             ResetMoveAnim();
             return;
