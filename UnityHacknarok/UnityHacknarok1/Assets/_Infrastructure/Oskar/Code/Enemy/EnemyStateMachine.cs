@@ -11,11 +11,13 @@ namespace Infrastructure.Enemy
         [SerializeField] private float _chaseDistance = 5;
         [SerializeField] private float _attackDistance = 5;
 
+        private EnemyAnimations _enemyAnimations;
         private Rigidbody2D _rb;
         private Transform _player;
 
         void Awake()
         {
+            _enemyAnimations = GetComponent<EnemyAnimations>();
             _rb = GetComponent<Rigidbody2D>();
         }
 
@@ -40,17 +42,26 @@ namespace Infrastructure.Enemy
                 return;
             }
 
+            _enemyAnimations.IsMoving = false;
             _rb.velocity = Vector2.zero;
         }
 
         void Attack()
         {
+            _enemyAnimations.IsMoving = false;
+            
             _rb.velocity = Vector2.zero;
         }
 
         void Chase()
         {
-            _rb.velocity = (_player.position - transform.position).normalized * _speed * Time.deltaTime;
+            _enemyAnimations.IsMoving = true;
+            
+            var desiredVelocity = (_player.position - transform.position).normalized * _speed * Time.deltaTime;
+
+            _rb.velocity = desiredVelocity;
+            _enemyAnimations.Horizontal = desiredVelocity.x;
+            _enemyAnimations.Vertical = desiredVelocity.y;
         }
     }
 }
