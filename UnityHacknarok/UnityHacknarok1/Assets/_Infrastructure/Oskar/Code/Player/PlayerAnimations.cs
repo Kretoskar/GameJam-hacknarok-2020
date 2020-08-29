@@ -10,6 +10,7 @@ public class PlayerAnimations : MonoBehaviour
     [SerializeField] private string _lastHorizontalKey = "LastHorizontal";
     [SerializeField] private string _attackKey = "Attack";
     [SerializeField] private string _attackDirectionKey = "AttackDirection";
+    [SerializeField] private string _hurtKey = "Hurt";
 
     [SerializeField] 
     [Range(0,1)]
@@ -38,6 +39,11 @@ public class PlayerAnimations : MonoBehaviour
         MoveAnim();
     }
 
+    public void HurtAnim()
+    {
+        _animator.SetTrigger(_hurtKey);
+    }
+    
     private void ResetMoveAnim()
     {
         _animator.SetBool(_isMovingKey, false);

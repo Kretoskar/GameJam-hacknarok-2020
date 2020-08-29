@@ -35,11 +35,14 @@ namespace Infrastructure
         [SerializeField] private float _maxTime = 120;
         [SerializeField] private Image _fillImage;
 
+        private PlayerAnimations _playerAnimations;
         private float _currTime;
 
         void Start()
         {
             _currTime = _maxTime;
+
+            _playerAnimations = FindObjectOfType<PlayerAnimations>();
         }
         
         void Update()
@@ -52,6 +55,8 @@ namespace Infrastructure
         public void GetDamage(int damage)
         {
             _currTime -= damage;
+            
+            _playerAnimations.HurtAnim();
         }
         
         void UpdateUI()
