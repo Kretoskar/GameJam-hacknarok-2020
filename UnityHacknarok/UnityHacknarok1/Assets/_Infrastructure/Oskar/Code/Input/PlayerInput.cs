@@ -43,6 +43,8 @@ namespace Infrastructure
         public Action InteractionKeyPressed;
 
         public Action AttackKeyPressed;
+
+        public bool CanAttack;
         
         public float HorizontalAxis { get; private set; }
 
@@ -54,6 +56,7 @@ namespace Infrastructure
 
         void Awake()
         {
+            CanAttack = true;
             _mainCamera = Camera.main;
         }
         
@@ -62,7 +65,7 @@ namespace Infrastructure
             HorizontalAxis = Input.GetAxisRaw(HORIZONTAL_AXIS_KEY);
             VerticalAxis = Input.GetAxisRaw(VARTICAL_AXIS_KEY);
 
-            if (Input.GetButtonDown(_attackKey))
+            if (Input.GetButtonDown(_attackKey) && CanAttack)
             {
                 AttackKeyPressed?.Invoke();
             }
