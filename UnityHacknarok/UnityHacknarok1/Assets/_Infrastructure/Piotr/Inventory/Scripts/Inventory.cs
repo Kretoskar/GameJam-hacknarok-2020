@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public Dictionary<int, string> ItemsKeyName;
+    public Dictionary<int, GameObject> ItemsKeyGameObject;
     public List<string> itemsList; //just for testing
+    public ItemData[] allItems;
 
     private void Awake()
     {
-        ItemsKeyName = new Dictionary<int, string>();
+        ItemsKeyGameObject = new Dictionary<int, GameObject>();
+        allItems = FindObjectsOfType<ItemData>();
+
     }
 
 

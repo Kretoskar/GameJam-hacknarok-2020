@@ -15,12 +15,13 @@ public class PickUpItem : MonoBehaviour
     {
         if(collision.transform.tag.Equals("player"))
         {
-            inventory.ItemsKeyName.Add(ThisItemData.ItemID, ThisItemData.ItemName);
-            foreach(KeyValuePair<int, string> item in inventory.ItemsKeyName)
+            inventory.ItemsKeyGameObject.Add(ThisItemData.ItemID, this.gameObject);
+            foreach(KeyValuePair<int, GameObject> item in inventory.ItemsKeyGameObject)
             {
-                inventory.itemsList.Add(item.Value);
+                inventory.itemsList.Add(item.Value.ToString());
             }
-            Debug.Log("collision");
+            
+
         }
     }
 }
