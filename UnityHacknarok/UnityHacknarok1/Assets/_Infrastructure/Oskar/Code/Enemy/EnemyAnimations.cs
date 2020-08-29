@@ -37,5 +37,10 @@ namespace Infrastructure.Enemy
                 _animator.SetBool(_isMovingKey, false);
             }
         }
+
+        public void Attack()
+        {
+            _animator.SetTrigger(_attackKey);
+        }
     }
 }
