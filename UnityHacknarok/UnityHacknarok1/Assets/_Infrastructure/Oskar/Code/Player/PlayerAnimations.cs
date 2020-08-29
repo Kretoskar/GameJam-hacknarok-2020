@@ -8,6 +8,8 @@ public class PlayerAnimations : MonoBehaviour
     [SerializeField] private string _isMovingKey = "IsMoving";
     [SerializeField] private string _horizontalKey = "Horizontal";
     [SerializeField] private string _lastHorizontalKey = "LastHorizontal";
+    [SerializeField] private string _attackKey = "Attack";
+    [SerializeField] private string _attackDirectionKey = "AttackDirection";
 
     [SerializeField] 
     [Range(0,1)]
@@ -20,6 +22,8 @@ public class PlayerAnimations : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _playerInput = PlayerInput.Instance;
+
+        _playerInput.AttackKeyPressed += AttackAnim;
     }
 
     void Update()
@@ -45,5 +49,11 @@ public class PlayerAnimations : MonoBehaviour
        _animator.SetBool(_isMovingKey, true);
        _animator.SetFloat(_horizontalKey, _playerInput.HorizontalAxis);
        _animator.SetFloat(_lastHorizontalKey, _playerInput.HorizontalAxis);
+    }
+
+    private void AttackAnim()
+    {
+        _animator.SetFloat(_attackDirectionKey, _playerInput.DirectionFromPlayerToMouse.x);
+        _animator.SetTrigger(_attackKey);
     }
 }

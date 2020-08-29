@@ -38,5 +38,4 @@ namespace Infrastructure.Player
             _rb.MovePosition(_rb.position + _moveVector * _speed * Time.fixedDeltaTime);
         }
     }
-
 }
