@@ -4,13 +4,34 @@ using UnityEngine;
 
 namespace Infrastructure.Player
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public class Mover : MonoBehaviour
     {
+        [SerializeField] [Range(0.1f, 100)] private float _speed;
+        
+        private Rigidbody2D _rb;
+
+        private Vector2 _moveVector;
+        
+        void Awake()
+        {
+            _rb = GetComponent<Rigidbody2D>();
+        }
+
         public void Move(float horizontal, float vertical)
         {
-            Vector2 moveVector = new Vector2(horizontal, vertical);
+            GetMoveVectorFromInput(horizontal, vertical);
+            MoveRigidbody();
+        }
 
-            print(moveVector);
+        private void GetMoveVectorFromInput(float horizontal, float vertical)
+        {
+            _moveVector = new Vector2(horizontal, vertical).normalized;
+        }
+
+        private void MoveRigidbody()
+        {
+            _rb.MovePosition(_rb.position + _moveVector * _speed * Time.fixedDeltaTime);
         }
     }
 

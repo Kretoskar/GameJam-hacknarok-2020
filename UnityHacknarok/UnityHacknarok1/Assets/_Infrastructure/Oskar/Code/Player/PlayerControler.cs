@@ -18,10 +18,14 @@ namespace Infrastructure.Player
             _mover = GetComponent<Mover>();
         }
         
-        void Update()
+        void FixedUpdate()
         { 
+            Move();
+        }
+
+        void Move()
+        {
             _mover.Move(_playerInput.HorizontalAxis, _playerInput.VerticalAxis);
         }
     }
-
 }
