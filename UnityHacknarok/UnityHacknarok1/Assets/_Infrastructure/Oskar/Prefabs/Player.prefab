@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 5385716633232331322}
   - component: {fileID: 5385716633232331303}
   - component: {fileID: 5385716633232331300}
+  - component: {fileID: 2083459082}
+  - component: {fileID: 2083459083}
+  - component: {fileID: 822910643073482687}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -74,14 +77,14 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 4723107735738678597, guid: 6e8ba3104cc5e2446ae23aba47ab5be7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -126,7 +129,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 0.16, y: 0.16}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -155,6 +158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766ecabd0ae4d6a4395a04793c4c40af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactionKey: Interact
+  _attackKey: Fire1
+  CanAttack: 0
 --- !u!114 &5385716633232331303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,8 +173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8d1e294b5be304a81e280b68171ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  _stopHardness: 0.1
+  _speed: 2
+  _stopHardness: 0.5
+  CanMove: 0
 --- !u!114 &5385716633232331300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,3 +188,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b964d036b72f64e9db26ce4038b086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2083459082
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385716633232331323}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab39b43df5131574d962e984d8d21d89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2083459083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385716633232331323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a7a0b456fac7b46860a136b7991094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isMovingKey: IsMoving
+  _horizontalKey: Horizontal
+  _lastHorizontalKey: LastHorizontal
+  _attackKey: Attack
+  _attackDirectionKey: AttackDirection
+  _idleAnimTransitionHardness: 0.5
+--- !u!114 &822910643073482687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385716633232331323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a0367eb365a714cbd993ccc3a08f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackTime: 0.35
+  _dashTime: 0.25
+  _speed: 200
+  _attackRange: 0.35
+  _circleOverlapRadius: 0.5
+  _enemyLayer: Enemy

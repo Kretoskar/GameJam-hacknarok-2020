@@ -1,37 +1,49 @@
 fileFormatVersion: 2
-guid: 6e8ba3104cc5e2446ae23aba47ab5be7
+guid: f0756c8ef6d2dcf4d8830e81036ac64e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: -3643998761827717319
+    second: Running_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: -4707866458138886681
+    second: Running_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: -7457498982976366407
+    second: Running_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: -5594891616951461250
+    second: Running_3
   - first:
-      213: 7264182050183361747
-    second: Idle_4
+      213: 2398275797733112376
+    second: Running_4
   - first:
-      213: -2834552850196481573
-    second: Idle_5
+      213: -6865345740338609477
+    second: Running_5
   - first:
-      213: 3278449094680734212
-    second: Idle_6
+      213: -4611400358306370047
+    second: Running_6
   - first:
-      213: 3384493420599841878
-    second: Idle_7
+      213: -3366806091697730171
+    second: Running_7
   - first:
-      213: -2331352242086191015
-    second: Idle_8
+      213: 5294525408286821128
+    second: Running_8
   - first:
-      213: -3914248031228685145
-    second: Idle_9
+      213: 3322434517264523616
+    second: Running_9
+  - first:
+      213: 6497241835817499410
+    second: Running_10
+  - first:
+      213: 8344637379857900910
+    second: Running_11
+  - first:
+      213: -2449280496364488426
+    second: Running_12
+  - first:
+      213: 4295936485009105211
+    second: Running_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Running_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
+      spriteID: 93fab4fce6aed6dc0800000000000000
+      internalID: -3643998761827717319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: Running_1
       rect:
         serializedVersion: 2
         x: 64
@@ -152,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
+      spriteID: 7edb7a0566c4aaeb0800000000000000
+      internalID: -4707866458138886681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: Running_2
       rect:
         serializedVersion: 2
         x: 128
@@ -173,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184dda4e3d6b3ec20800000000000000
-      internalID: 3234629978573100161
+      spriteID: 9b85bdebf24a18890800000000000000
+      internalID: -7457498982976366407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: Running_3
       rect:
         serializedVersion: 2
         x: 192
@@ -194,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96cb1dafe7d917850800000000000000
-      internalID: 6373048116405451881
+      spriteID: e7a1cc6a7b3fa52b0800000000000000
+      internalID: -5594891616951461250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_4
+      name: Running_4
       rect:
         serializedVersion: 2
         x: 256
@@ -215,14 +227,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d4b2fc561f8fc460800000000000000
-      internalID: 7264182050183361747
+      spriteID: 83a7c45a123684120800000000000000
+      internalID: 2398275797733112376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_5
+      name: Running_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb240ee5c6469b0a0800000000000000
+      internalID: -6865345740338609477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e2a0e6ec30100c0800000000000000
+      internalID: -4611400358306370047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running_7
       rect:
         serializedVersion: 2
         x: 0
@@ -236,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd9b7fa6335a9a8d0800000000000000
-      internalID: -2834552850196481573
+      spriteID: 58d4cbc92b3b641d0800000000000000
+      internalID: -3366806091697730171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_6
+      name: Running_8
       rect:
         serializedVersion: 2
         x: 64
@@ -257,14 +311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a65a6e4146f7d20800000000000000
-      internalID: 3278449094680734212
+      spriteID: 80b4737aecee97940800000000000000
+      internalID: 5294525408286821128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_7
+      name: Running_9
       rect:
         serializedVersion: 2
         x: 128
@@ -278,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 654108f85d228fe20800000000000000
-      internalID: 3384493420599841878
+      spriteID: 0616c072798ab1e20800000000000000
+      internalID: 3322434517264523616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_8
+      name: Running_10
       rect:
         serializedVersion: 2
         x: 192
@@ -299,14 +353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9506424ec7f55afd0800000000000000
-      internalID: -2331352242086191015
+      spriteID: 21b75bb9607da2a50800000000000000
+      internalID: 6497241835817499410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_9
+      name: Running_11
       rect:
         serializedVersion: 2
         x: 256
@@ -320,8 +374,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a497d7772ccda9c0800000000000000
-      internalID: -3914248031228685145
+      spriteID: e6560e53c7b1ec370800000000000000
+      internalID: 8344637379857900910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619f6ea8d58620ed0800000000000000
+      internalID: -2449280496364488426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31ab96e87b3e9b30800000000000000
+      internalID: 4295936485009105211
       vertices: []
       indices: 
       edges: []
