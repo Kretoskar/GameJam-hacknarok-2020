@@ -41,9 +41,7 @@ namespace Infrastructure.Player
             while (true)
             {
                 currentTime += Time.deltaTime;
-
-                _rb.velocity = _playerInput.DirectionFromPlayerToMouse * _speed * Time.deltaTime;
-
+                
                 if(currentTime >= _dashTime)
                     break;
                 
@@ -55,10 +53,12 @@ namespace Infrastructure.Player
             while (true)
             {
                 currentTime += Time.deltaTime;
-                
+
+                _rb.velocity = _playerInput.DirectionFromPlayerToMouse * _speed * Time.deltaTime;
+
                 if(currentTime >= _attackTime)
                     break;
-
+                
                 yield return null;
             }
 
