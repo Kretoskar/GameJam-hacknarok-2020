@@ -47,8 +47,8 @@ namespace Infrastructure
 
         private void Update()
         {
-            HorizontalAxis = Input.GetAxis(HORIZONTAL_AXIS_KEY);
-            VerticalAxis = Input.GetAxis(VARTICAL_AXIS_KEY);
+            HorizontalAxis = Input.GetAxisRaw(HORIZONTAL_AXIS_KEY);
+            VerticalAxis = Input.GetAxisRaw(VARTICAL_AXIS_KEY);
 
             if (Input.GetButtonDown(_interactionKey))
             {
