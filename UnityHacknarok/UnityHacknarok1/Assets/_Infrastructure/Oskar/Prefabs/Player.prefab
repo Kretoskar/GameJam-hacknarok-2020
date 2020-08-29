@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5385716633232331300}
   - component: {fileID: 2083459082}
   - component: {fileID: 2083459083}
+  - component: {fileID: 822910643073482687}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -158,6 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionKey: Interact
+  _attackKey: Fire1
+  CanAttack: 0
 --- !u!114 &5385716633232331303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 2
   _stopHardness: 0.5
+  CanMove: 0
 --- !u!114 &5385716633232331300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,4 +222,24 @@ MonoBehaviour:
   _isMovingKey: IsMoving
   _horizontalKey: Horizontal
   _lastHorizontalKey: LastHorizontal
+  _attackKey: Attack
+  _attackDirectionKey: AttackDirection
   _idleAnimTransitionHardness: 0.5
+--- !u!114 &822910643073482687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385716633232331323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a0367eb365a714cbd993ccc3a08f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackTime: 0.35
+  _dashTime: 0.25
+  _speed: 200
+  _attackRange: 0.35
+  _circleOverlapRadius: 0.5
+  _enemyLayer: Enemy
