@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766ecabd0ae4d6a4395a04793c4c40af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactionKey: Interact
 --- !u!114 &5385716633232331303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,8 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8d1e294b5be304a81e280b68171ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  _stopHardness: 0.1
+  _speed: 2
+  _stopHardness: 0.5
 --- !u!114 &5385716633232331300
 MonoBehaviour:
   m_ObjectHideFlags: 0
