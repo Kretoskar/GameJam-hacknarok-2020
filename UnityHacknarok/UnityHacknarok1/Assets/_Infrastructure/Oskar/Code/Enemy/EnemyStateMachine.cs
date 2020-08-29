@@ -34,15 +34,20 @@ namespace Infrastructure.Enemy
                 return;
             }
 
-            if(distanceToPlayer < _chaseDistance)
+            if (distanceToPlayer < _chaseDistance)
+            {
                 Chase();
+                return;
+            }
+
+            _rb.velocity = Vector2.zero;
         }
 
         void Attack()
         {
             _rb.velocity = Vector2.zero;
         }
-        
+
         void Chase()
         {
             _rb.velocity = (_player.position - transform.position).normalized * _speed * Time.deltaTime;
