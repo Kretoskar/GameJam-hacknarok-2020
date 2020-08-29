@@ -7,6 +7,31 @@ namespace Infrastructure
 {
     public class Timer : MonoBehaviour
     {
+        #region Singleton
+        
+        
+        private static Timer _instance;
+
+        public static Timer Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType<Timer>();
+                    if (_instance == null)
+                    {
+                        GameObject container = new GameObject("Timer");
+                        _instance = container.AddComponent<Timer>();
+                    }
+                }
+
+                return _instance;
+            }
+        }
+        
+        #endregion
+        
         [SerializeField] private float _maxTime = 120;
         [SerializeField] private Image _fillImage;
 

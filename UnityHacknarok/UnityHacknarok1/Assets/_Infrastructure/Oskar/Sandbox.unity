@@ -713,8 +713,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 200
+  _attackDamage: 20
   _chaseDistance: 3
   _attackDistance: 0.5
+  _attackCooldown: 1
 --- !u!50 &1420000342
 Rigidbody2D:
   serializedVersion: 4
@@ -735,7 +737,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &1420000343
 Animator:
   serializedVersion: 3

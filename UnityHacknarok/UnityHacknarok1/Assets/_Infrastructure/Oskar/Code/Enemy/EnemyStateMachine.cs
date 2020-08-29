@@ -8,9 +8,12 @@ namespace Infrastructure.Enemy
     public class EnemyStateMachine : MonoBehaviour
     {
         [SerializeField] [Range(0,1000)] private float _speed = 5;
+        [SerializeField] [Range(0,200)] private int _attackDamage;
         [SerializeField] private float _chaseDistance = 5;
         [SerializeField] private float _attackDistance = 5;
         [SerializeField] private float _attackCooldown = 1;
+        [SerializeField] private float _firstAttackCooldown = .5f;
+        
 
         private bool _isAttacking;
         
@@ -66,9 +69,13 @@ namespace Infrastructure.Enemy
         {
             _isAttacking = true;
             
+            yield return new WaitForSeconds(_firstAttackCooldown);
+            
             while (true)
             {
                 _enemyAnimations.Attack();
+                Timer.Instance.GetDamage(_attackDamage);
+                
                 yield return new WaitForSeconds(_attackCooldown);
             }
         }
