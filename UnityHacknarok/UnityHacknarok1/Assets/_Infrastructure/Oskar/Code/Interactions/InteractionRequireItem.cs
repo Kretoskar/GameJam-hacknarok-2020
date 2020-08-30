@@ -9,6 +9,8 @@ namespace Infrastructure.Interactions
         [SerializeField] [Range(0,100)] private int _requiredItemID;
 
         private Inventory _inventory;
+
+        protected bool _hasItem;
         
         private void Start()
         {
@@ -17,8 +19,7 @@ namespace Infrastructure.Interactions
         
         public override void Interact()
         {
-            if(_inventory.GetItemById(_requiredItemID) == null)
-                return;
+            _hasItem = _inventory.GetItemById(_requiredItemID) != null;
         }
     }
 }

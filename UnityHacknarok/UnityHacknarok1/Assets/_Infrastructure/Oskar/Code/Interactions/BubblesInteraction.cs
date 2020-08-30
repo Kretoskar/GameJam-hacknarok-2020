@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Infrastructure.Interactions
 {
-    public class BubblesInteraction : Interaction
+    public class BubblesInteraction : InteractionRequireItem
     {
         [SerializeField] private int _scoreAdd = 20;
         [SerializeField] private int _timerAdd = 5;
@@ -18,6 +18,11 @@ namespace Infrastructure.Interactions
 
         public override void Interact()
         {
+            base.Interact();
+            
+            if(!_hasItem)
+                return;
+            
             StartCoroutine(InteractCoroutine());
         }
 
