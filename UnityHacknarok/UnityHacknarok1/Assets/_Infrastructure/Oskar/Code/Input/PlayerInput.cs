@@ -45,6 +45,8 @@ namespace Infrastructure
         public Action AttackKeyPressed;
 
         public bool CanAttack;
+
+        public bool BlockInputCompletely;
         
         public float HorizontalAxis { get; private set; }
 
@@ -62,6 +64,9 @@ namespace Infrastructure
         
         private void Update()
         {
+            if(BlockInputCompletely)
+                return;
+            
             HorizontalAxis = Input.GetAxisRaw(HORIZONTAL_AXIS_KEY);
             VerticalAxis = Input.GetAxisRaw(VARTICAL_AXIS_KEY);
 
