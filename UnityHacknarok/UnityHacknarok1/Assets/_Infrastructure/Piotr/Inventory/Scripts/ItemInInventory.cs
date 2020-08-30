@@ -41,15 +41,32 @@ public class ItemInInventory : MonoBehaviour
         inventoryIndex = transform.GetSiblingIndex();
     }
 
-    public int RemoveItem() // zmień to na metodę zwracającą inta, która za parametr przyjmuje id
+    public int? RemoveItem(int id) // zmień to na metodę zwracającą inta, która za parametr przyjmuje id
+    {
+        int key = itemKey;
+        if (id == key)
+        {
+            HasBeenRemoved = true;
+            allocateSlots.RearrangeAfterRemoved();
+            IsOccupied = false;
+            HasBeenRemoved = false;
+            itemKey = 0; // default
+            return key;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public void RemoveItemButton()
     {
         int key = itemKey;
         HasBeenRemoved = true;
         allocateSlots.RearrangeAfterRemoved();
         IsOccupied = false;
+        itemKey = 0; // default
 
-        
         HasBeenRemoved = false;
-        return key;
     }
 }

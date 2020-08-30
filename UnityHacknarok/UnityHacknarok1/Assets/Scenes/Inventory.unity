@@ -458,7 +458,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1716508704}
-        m_MethodName: RemoveItem
+        m_MethodName: RemoveItemButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -716,7 +716,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 437708838}
-        m_MethodName: RemoveItem
+        m_MethodName: RemoveItemButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1341,7 +1341,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1938512375}
-        m_MethodName: RemoveItem
+        m_MethodName: RemoveItemButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

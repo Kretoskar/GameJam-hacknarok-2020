@@ -26,6 +26,17 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
+    public int? GetItemById(int id)
+    {
+        foreach(var slot in inventorySlots)
+        {
+            if(slot.GetComponent<ItemInInventory>().itemKey == id)
+            {
+                return slot.GetComponent<ItemInInventory>().RemoveItem(id);
+            }
+        }
 
+        return null;
+    }
 
 }
