@@ -50,7 +50,7 @@ public class ItemInInventory : MonoBehaviour
             allocateSlots.RearrangeAfterRemoved();
             IsOccupied = false;
             HasBeenRemoved = false;
-            itemKey = 0; // default
+            itemKey = -1; // default
             return key;
         }
         else
@@ -65,7 +65,7 @@ public class ItemInInventory : MonoBehaviour
         HasBeenRemoved = true;
         allocateSlots.RearrangeAfterRemoved();
         IsOccupied = false;
-        itemKey = 0; // default
+        itemKey = -1; // default
 
         HasBeenRemoved = false;
     }
