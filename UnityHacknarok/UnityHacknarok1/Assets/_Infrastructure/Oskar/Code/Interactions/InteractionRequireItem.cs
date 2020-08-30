@@ -8,9 +8,17 @@ namespace Infrastructure.Interactions
     {
         [SerializeField] [Range(0,100)] private int _requiredItemID;
 
+        private Inventory _inventory;
+        
+        private void Start()
+        {
+            _inventory = Inventory.Instance;
+        }
+        
         public override void Interact()
         {
-            
+            if(_inventory.GetItemById(_requiredItemID) == null)
+                return;
         }
     }
 }
