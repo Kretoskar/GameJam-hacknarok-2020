@@ -700,6 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e76d0dcf865e743a390267a471b37e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _requiredItemID: 1
   _scoreAdd: 20
   _timerAdd: 5
   _interactionTime: 1
