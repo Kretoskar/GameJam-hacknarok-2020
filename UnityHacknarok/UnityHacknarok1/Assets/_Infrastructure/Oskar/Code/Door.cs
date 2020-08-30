@@ -6,6 +6,8 @@ namespace Infrastructure
 {
     public class Door : MonoBehaviour
     {
+        private Collider2D _collider;
+        
         #region Singleton
         
         private static Door _instance;
@@ -37,10 +39,12 @@ namespace Infrastructure
         void Awake()
         {
             _animator = GetComponent<Animator>();
+            _collider = GetComponent<Collider2D>();
         }
 
         public void Open()
         {
+            _collider.enabled = true;
             _animator.SetTrigger(_animatorTriggerName);
         }
     }
