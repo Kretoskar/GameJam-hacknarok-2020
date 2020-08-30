@@ -58,6 +58,11 @@ namespace Infrastructure
             
             _playerAnimations.HurtAnim();
         }
+
+        public void AddTime(int time)
+        {
+            _currTime += time;
+        }
         
         void UpdateUI()
         {
