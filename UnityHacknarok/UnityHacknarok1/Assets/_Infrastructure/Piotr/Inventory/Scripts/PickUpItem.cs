@@ -6,9 +6,14 @@ using UnityEngine.PlayerLoop;
 public class PickUpItem : MonoBehaviour
 {
     public Inventory inventory;
-    [SerializeField] private ItemData ThisItemData;
+    //[SerializeField]
+    private ItemData ThisItemData;
     private ItemInInventory[] itemsInInventory;
+    
+    [HideInInspector]
     public GameObject[] slots;
+    
+    [HideInInspector]
     public AllocateSlots allocateSlots;
 
     private void Awake()
