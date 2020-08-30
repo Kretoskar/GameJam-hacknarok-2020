@@ -56,6 +56,12 @@ namespace Infrastructure.LevelManagement
             }
         }
 
+        //do tego playmakera kurwy
+        public void AddScore(int score)
+        {
+            CurrentScore += score;
+        }
+        
         private void UpdateUI()
         {
             //string builder chuju

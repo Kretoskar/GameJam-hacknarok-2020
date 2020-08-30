@@ -62,6 +62,9 @@ namespace Infrastructure
         public void AddTime(int time)
         {
             _currTime += time;
+
+            if (_currTime > _maxTime)
+                _currTime = _maxTime;
         }
         
         void UpdateUI()
