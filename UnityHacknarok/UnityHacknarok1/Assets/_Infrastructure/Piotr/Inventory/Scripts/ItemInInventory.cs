@@ -27,8 +27,8 @@ public class ItemInInventory : MonoBehaviour
     {
         if(allocateSlots.GetAvailableSlot() == inventoryIndex && ItemsKeyGameObject != null)
         {
-            //if(ItemsKeyGameObject.ContainsKey(inventoryIndex))
-            //{
+            if(ItemsKeyGameObject.ContainsKey(itemKey))
+            {
 
                 itemInInventoryImage.sprite = ItemsKeyGameObject[itemKey].GetComponent<SpriteRenderer>().sprite;
                 itemKey = itemsKeys[itemsKeys.Count - 1];
@@ -36,7 +36,7 @@ public class ItemInInventory : MonoBehaviour
                 ItemsKeyGameObject.Remove(itemsKeys[itemsKeys.Count - 1]);
                 allocateSlots.RemoveLowestSlot();
                 IsOccupied = true;
-            //}
+            }
         }
         inventoryIndex = transform.GetSiblingIndex();
     }
