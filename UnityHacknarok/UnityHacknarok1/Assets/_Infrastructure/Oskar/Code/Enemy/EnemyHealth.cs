@@ -11,7 +11,6 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private int _addPointsOnDeath = 10;
     [SerializeField] private int _addTimeOnDeath = 10;
     
-    
     private Attackable _attackable;
     
     private int _currentHealth;
