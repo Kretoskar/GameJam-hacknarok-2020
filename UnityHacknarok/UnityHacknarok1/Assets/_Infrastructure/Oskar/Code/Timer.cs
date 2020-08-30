@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Infrastructure
@@ -57,8 +58,25 @@ namespace Infrastructure
             _currTime -= damage;
             
             _playerAnimations.HurtAnim();
+
+            if (_currTime <= 0)
+                Die();
         }
 
+        private void Die()
+        {
+            PlayerInput.Instance.BlockInputCompletely = true;
+            
+            StartCoroutine(DieCoroutine());
+        }
+
+        private IEnumerator DieCoroutine()
+        {
+            yield return new WaitForSeconds(1);
+
+            SceneManager.LoadScene(2);
+        }
+        
         public void AddTime(int time)
         {
             _currTime += time;

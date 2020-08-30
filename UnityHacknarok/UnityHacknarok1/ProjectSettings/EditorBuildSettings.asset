@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Infrastructure/Oskar/Sandbox.unity
     guid: 9b32d73bda700df4894d064b746fbb85
+  - enabled: 1
+    path: Assets/_Game/Scenes/GameOver.unity
+    guid: 44e2ecf8b505d944c962cf750fc84028
   m_configObjects: {}

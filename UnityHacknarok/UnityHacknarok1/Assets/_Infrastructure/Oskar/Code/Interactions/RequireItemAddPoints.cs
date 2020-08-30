@@ -7,8 +7,16 @@ using UnityEngine;
 
 public class RequireItemAddPoints : InteractionRequireItem
 {
+    [SerializeField] private AudioClip _audio;
     [SerializeField] private int _addPoints;
     [SerializeField] private int _addTime;
+
+    private AudioSource _audioSource;
+
+    void Awake()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
 
     public override void Interact()
     {
@@ -18,6 +26,8 @@ public class RequireItemAddPoints : InteractionRequireItem
         {
             Timer.Instance.AddTime(_addTime);
             ScoreManager.Instance.AddScore(_addPoints);
+            
+            _audioSource.PlayOneShot(_audio);
         }
     }
 }

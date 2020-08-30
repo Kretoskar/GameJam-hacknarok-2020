@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 3796f6c6335c8244889924a01352e4a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6193017752021988066
+    second: GAME OVER_0
+  - first:
+      213: 5820961295702938671
+    second: GAME OVER_1
+  - first:
+      213: -760178780327941963
+    second: GAME OVER_2
+  - first:
+      213: 8381172851555113691
+    second: GAME OVER_3
+  - first:
+      213: -3997615412072407704
+    second: GAME OVER_4
+  - first:
+      213: -4325527861284841
+    second: GAME OVER_5
+  - first:
+      213: -8880863197620815810
+    second: GAME OVER_6
+  - first:
+      213: 6032398750418123295
+    second: GAME OVER_7
+  - first:
+      213: -7439007126727180488
+    second: GAME OVER_8
+  - first:
+      213: -5941174678058194449
+    second: GAME OVER_9
+  - first:
+      213: -3471636068989444253
+    second: GAME OVER_10
+  - first:
+      213: -6669530428094399882
+    second: GAME OVER_11
+  - first:
+      213: 7048046180760481579
+    second: GAME OVER_12
+  - first:
+      213: -3130432819824687588
+    second: GAME OVER_13
+  - first:
+      213: 8248407692271611854
+    second: GAME OVER_14
+  - first:
+      213: 1656172059224127980
+    second: GAME OVER_15
+  - first:
+      213: 8559365258298927282
+    second: GAME OVER_16
+  - first:
+      213: 8063941343546914396
+    second: GAME OVER_17
+  - first:
+      213: 264678790444056965
+    second: GAME OVER_18
+  - first:
+      213: 129710518611844849
+    second: GAME OVER_19
+  - first:
+      213: 9202740085244937358
+    second: GAME OVER_20
+  - first:
+      213: 5328225770603585138
+    second: GAME OVER_21
+  - first:
+      213: -5592415132654800536
+    second: GAME OVER_22
+  - first:
+      213: 3296663228476174841
+    second: GAME OVER_23
+  - first:
+      213: -171826062630617793
+    second: GAME OVER_24
+  - first:
+      213: -70119440181887251
+    second: GAME OVER_25
+  - first:
+      213: -5804184815365747722
+    second: GAME OVER_26
+  - first:
+      213: -1537344325364262362
+    second: GAME OVER_27
+  - first:
+      213: 6430723384112945582
+    second: GAME OVER_28
+  - first:
+      213: 8787825377066482895
+    second: GAME OVER_29
+  - first:
+      213: 1876696940343885380
+    second: GAME OVER_30
+  - first:
+      213: -5762984522025734329
+    second: GAME OVER_31
+  - first:
+      213: 4801403014846743181
+    second: GAME OVER_32
+  - first:
+      213: -5271106287004575063
+    second: GAME OVER_33
+  - first:
+      213: 7502874388125852940
+    second: GAME OVER_34
+  - first:
+      213: 3006404747824737748
+    second: GAME OVER_35
+  - first:
+      213: -3397014760937093333
+    second: GAME OVER_36
+  - first:
+      213: 6524301411275761835
+    second: GAME OVER_37
+  - first:
+      213: -3484694332559620655
+    second: GAME OVER_38
+  - first:
+      213: -1164519062860338777
+    second: GAME OVER_39
+  - first:
+      213: -8940905322787480963
+    second: GAME OVER_40
+  - first:
+      213: -6400377747015814283
+    second: GAME OVER_41
+  - first:
+      213: -4602633162123609706
+    second: GAME OVER_42
+  - first:
+      213: -3565181588647028010
+    second: GAME OVER_43
+  - first:
+      213: -763942131829724266
+    second: GAME OVER_44
+  - first:
+      213: 8893527210490087861
+    second: GAME OVER_45
+  - first:
+      213: 6018490353114544670
+    second: GAME OVER_46
+  - first:
+      213: -2570499669767734047
+    second: GAME OVER_47
+  - first:
+      213: 1397008101329352786
+    second: GAME OVER_48
+  - first:
+      213: 5440951573769737931
+    second: GAME OVER_49
+  - first:
+      213: -3926739975525271435
+    second: GAME OVER_50
+  - first:
+      213: 1780034602355204982
+    second: GAME OVER_51
+  - first:
+      213: 2179229412898677710
+    second: GAME OVER_52
+  - first:
+      213: 3072520654437440899
+    second: GAME OVER_53
+  - first:
+      213: -8806189023540881693
+    second: GAME OVER_54
+  - first:
+      213: -6212377358318306224
+    second: GAME OVER_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GAME OVER_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d8a03aa2bfd0aa0800000000000000
+      internalID: -6193017752021988066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24dba9257538c050800000000000000
+      internalID: 5820961295702938671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b863c84d6d4375f0800000000000000
+      internalID: -760178780327941963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda171a9d48ef4470800000000000000
+      internalID: 8381172851555113691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d1cc686fd9588c0800000000000000
+      internalID: -3997615412072407704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710bc5094f1a0fff0800000000000000
+      internalID: -4325527861284841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME OVER_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38b8fe79f5d0c480800000000000000
+      internalID: -8880863197620815810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
