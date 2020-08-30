@@ -53,7 +53,14 @@ namespace Infrastructure.LevelManagement
             {
                 _currentScore = value;
                 UpdateUI();
+                CheckWin();
             }
+        }
+
+        private void CheckWin()
+        {
+            if(_currentScore >= _requiredScore)
+                Door.Instance.Open();
         }
 
         //do tego playmakera kurwy
