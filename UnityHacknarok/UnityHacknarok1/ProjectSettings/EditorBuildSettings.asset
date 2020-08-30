@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/_Infrastructure/Oskar/FirstLevel.unity
     guid: 9b32d73bda700df4894d064b746fbb85
   - enabled: 1
+    path: Assets/_Infrastructure/Oskar/SecondLevel.unity
+    guid: 01bdcff71a5eb504bb8ca849f9c189ee
+  - enabled: 1
+    path: Assets/_Infrastructure/Oskar/ThirdLevel.unity
+    guid: 0e5143f4ba14efe4799f8f1c9266fdd5
+  - enabled: 1
     path: Assets/_Game/Scenes/GameOver.unity
     guid: 44e2ecf8b505d944c962cf750fc84028
   m_configObjects: {}

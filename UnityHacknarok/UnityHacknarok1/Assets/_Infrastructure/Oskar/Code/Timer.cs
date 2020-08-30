@@ -74,7 +74,7 @@ namespace Infrastructure
         {
             yield return new WaitForSeconds(1);
 
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
         
         public void AddTime(int time)
