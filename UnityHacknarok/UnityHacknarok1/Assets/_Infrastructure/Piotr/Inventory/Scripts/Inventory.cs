@@ -5,14 +5,25 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public Dictionary<int, GameObject> ItemsKeyGameObject;
+    public GameObject[] inventorySlots;
     public List<string> itemsList; //just for testing
-    public ItemData[] allItems;
 
-    private void Awake()
+
+    private void Start()
     {
         ItemsKeyGameObject = new Dictionary<int, GameObject>();
-        allItems = FindObjectsOfType<ItemData>();
+    }
 
+    public bool IsIdInInventory(int id)
+    {
+        foreach(var slot in inventorySlots)
+        {
+            if(slot.GetComponent<ItemInInventory>().itemKey == id)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
 

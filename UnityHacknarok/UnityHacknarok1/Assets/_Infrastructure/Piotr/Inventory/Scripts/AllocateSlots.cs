@@ -45,47 +45,19 @@ public class AllocateSlots : MonoBehaviour
 
     public void RearrangeAfterRemoved()
     {
-        foreach(var item in ItemsInInventory)
+        foreach (var item in ItemsInInventory)
         {
-            if(item.HasBeenRemoved)
+            if (item.HasBeenRemoved)
             {
                 if (item.inventoryIndex == 0)
                 {
-                    if(ItemsInInventory[item.inventoryIndex + 1].IsOccupied && ItemsInInventory[item.inventoryIndex + 2].IsOccupied) //If deleted first item and other two are occupied
-                    {
-                        ItemsInInventory[item.inventoryIndex + 1].transform.SetAsFirstSibling();
-
-                        ItemsInInventory[item.inventoryIndex + 2].transform.SetSiblingIndex(1);
-
-                        ItemsInInventory[item.inventoryIndex].transform.SetSiblingIndex(2);
-
-                        ItemsInInventory[item.inventoryIndex + 1].inventoryIndex -= 1;
-                        ItemsInInventory[item.inventoryIndex + 2].inventoryIndex -= 1;
-                        ItemsInInventory[item.inventoryIndex].inventoryIndex = 2;
-
-                        item.GetComponent<Image>().sprite = null;
-
-                    }
-                    else if(ItemsInInventory[item.inventoryIndex + 1].IsOccupied) // If deleted first item and second is occupied
-                    {
-                        ItemsInInventory[item.inventoryIndex + 1].transform.SetAsFirstSibling();
-
-                        ItemsInInventory[item.inventoryIndex].transform.SetSiblingIndex(1);
-
-                        ItemsInInventory[item.inventoryIndex + 1].inventoryIndex -= 1;
-                        ItemsInInventory[item.inventoryIndex].inventoryIndex = 1;
-
-                        item.GetComponent<Image>().sprite = null;
-                    }
-
-
-                    
+                    item.transform.SetSiblingIndex(2);
                 }
-                if (item.inventoryIndex == 1)
+                else if (item.inventoryIndex == 1)
                 {
-
+                    item.transform.SetSiblingIndex(2);
                 }
-
+                item.GetComponent<Image>().sprite = null;
             }
         }
     }

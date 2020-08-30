@@ -48,6 +48,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   ThisItemData: {fileID: 0}
+  slots:
+  - {fileID: 7711742183739737493}
+  - {fileID: 7711742183739737493}
+  - {fileID: 7711742183739737493}
+  allocateSlots: {fileID: 0}
 --- !u!114 &7711742183739737491
 MonoBehaviour:
   m_ObjectHideFlags: 0

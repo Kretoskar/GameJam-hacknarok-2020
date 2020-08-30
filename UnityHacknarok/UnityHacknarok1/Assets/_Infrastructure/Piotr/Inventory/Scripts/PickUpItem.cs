@@ -8,10 +8,12 @@ public class PickUpItem : MonoBehaviour
     public Inventory inventory;
     [SerializeField] private ItemData ThisItemData;
     private ItemInInventory[] itemsInInventory;
+    public GameObject[] slots;
     public AllocateSlots allocateSlots;
 
     private void Awake()
     {
+
         ThisItemData = GetComponent<DisplayItem>().ItemData;
         itemsInInventory = FindObjectsOfType<ItemInInventory>();
         
@@ -21,10 +23,19 @@ public class PickUpItem : MonoBehaviour
         if(collision.transform.tag.Equals("player"))
         {
             inventory.ItemsKeyGameObject.Add(ThisItemData.ItemID, gameObject);
-            foreach(KeyValuePair<int, GameObject> item in inventory.ItemsKeyGameObject) // Nie mam odina, można wyjebać
+            foreach(var item in itemsInInventory)
             {
-                inventory.itemsList.Add(item.Value.ToString());
+                if (item.allocateSlots.AvailableSlot == item.inventoryIndex)
+                {
+                    item.itemKey = ThisItemData.ItemID;
+                }
             }
+            
+            //allocateSlots.AvailableSlot
+            //foreach(KeyValuePair<int, GameObject> item in inventory.ItemsKeyGameObject) // Nie mam odina, można wyjebać
+            //{
+            //    inventory.itemsList.Add(item.Value.ToString());
+            //}
             UpdateItemDictionary();
         }
     }

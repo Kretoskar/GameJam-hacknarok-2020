@@ -14,7 +14,6 @@ public class ItemInInventory : MonoBehaviour
     public AllocateSlots allocateSlots;
     public bool HasBeenRemoved;
     public bool IsOccupied = false;
-    public Component[] AllComponents;
 
     void Start()
     {
@@ -26,41 +25,31 @@ public class ItemInInventory : MonoBehaviour
 
     void Update()
     {
-        if(allocateSlots.GetAvailableSlot() == inventoryIndex)
+        if(allocateSlots.GetAvailableSlot() == inventoryIndex && ItemsKeyGameObject != null)
         {
-            if(ItemsKeyGameObject.ContainsKey(inventoryIndex))
-            {
-                itemInInventoryImage.sprite = ItemsKeyGameObject[inventoryIndex].GetComponent<SpriteRenderer>().sprite;
-                Destroy(ItemsKeyGameObject[itemsKeys[itemsKeys.Count - 1]]); // Destroy GameObject in ItemsKeyGameObject with key of last item added to itemKey List
+            //if(ItemsKeyGameObject.ContainsKey(inventoryIndex))
+            //{
+
+                itemInInventoryImage.sprite = ItemsKeyGameObject[itemKey].GetComponent<SpriteRenderer>().sprite;
+                itemKey = itemsKeys[itemsKeys.Count - 1];
+                Destroy(ItemsKeyGameObject[itemKey]); // Destroy GameObject in ItemsKeyGameObject with key of last item added to itemKey List
                 ItemsKeyGameObject.Remove(itemsKeys[itemsKeys.Count - 1]);
                 allocateSlots.RemoveLowestSlot();
-                UpdateComponents();
                 IsOccupied = true;
-            }
+            //}
         }
-
+        inventoryIndex = transform.GetSiblingIndex();
     }
 
-    public void RemoveItem()
+    public int RemoveItem() // zmień to na metodę zwracającą inta, która za parametr przyjmuje id
     {
-        //HasBeenRemoved = true;
-        
-        //allocateSlots.RearrangeAfterRemoved();
-
-        //IsOccupied = false;
-        //HasBeenRemoved = false;
-
+        int key = itemKey;
         HasBeenRemoved = true;
-
         allocateSlots.RearrangeAfterRemoved();
-
         IsOccupied = false;
+
+        
         HasBeenRemoved = false;
+        return key;
     }
-
-    public void UpdateComponents()
-    {
-        AllComponents = GetComponents<Component>();
-    }
-
 }
