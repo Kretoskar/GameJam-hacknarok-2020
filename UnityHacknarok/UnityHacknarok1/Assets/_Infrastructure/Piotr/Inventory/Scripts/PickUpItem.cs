@@ -5,6 +5,7 @@ using UnityEngine.PlayerLoop;
 
 public class PickUpItem : MonoBehaviour
 {
+    [HideInInspector]
     public Inventory inventory;
     //[SerializeField]
     private ItemData ThisItemData;
@@ -23,6 +24,12 @@ public class PickUpItem : MonoBehaviour
         itemsInInventory = FindObjectsOfType<ItemInInventory>();
         
     }
+
+    private void Start()
+    {
+        inventory = Inventory.Instance;
+    }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.transform.tag.Equals("player"))

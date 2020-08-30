@@ -4,6 +4,31 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    #region Singleton
+
+    private static Inventory _instance;
+
+    public static Inventory Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<Inventory>();
+                if (_instance == null)
+                {
+                    GameObject container = new GameObject("Inventory");
+                    _instance = container.AddComponent<Inventory>();
+                }
+            }
+
+            return _instance;
+        }
+    }
+        
+
+    #endregion
+    
     public Dictionary<int, GameObject> ItemsKeyGameObject;
     public GameObject[] inventorySlots;
     public List<string> itemsList; //just for testing
